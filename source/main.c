@@ -24,6 +24,7 @@
  * @brief   Application entry point.
  */
 int main(void) {
+	//modificacion
 
     /* Init board hardware. */
     BOARD_InitBootPins();
