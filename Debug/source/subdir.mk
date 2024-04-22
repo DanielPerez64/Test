@@ -4,16 +4,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../source/semihost_hardfault.c \
-../source/test_setup.c 
+../source/main.c \
+../source/semihost_hardfault.c 
 
 C_DEPS += \
-./source/semihost_hardfault.d \
-./source/test_setup.d 
+./source/main.d \
+./source/semihost_hardfault.d 
 
 OBJS += \
-./source/semihost_hardfault.o \
-./source/test_setup.o 
+./source/main.o \
+./source/semihost_hardfault.o 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -28,7 +28,7 @@ source/%.o: ../source/%.c source/subdir.mk
 clean: clean-source
 
 clean-source:
-	-$(RM) ./source/semihost_hardfault.d ./source/semihost_hardfault.o ./source/test_setup.d ./source/test_setup.o
+	-$(RM) ./source/main.d ./source/main.o ./source/semihost_hardfault.d ./source/semihost_hardfault.o
 
 .PHONY: clean-source
 

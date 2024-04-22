@@ -25,6 +25,7 @@
  */
 int main(void) {
 	//modificacion
+	//otro comentario para generar commit
 
     /* Init board hardware. */
     BOARD_InitBootPins();
